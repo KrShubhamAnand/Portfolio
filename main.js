@@ -223,6 +223,7 @@ document.querySelector("#app").innerHTML = `
             <div class="mt-4">
               <textarea id="message" name="message" placeholder="Your Message" class="border border-gray-300 rounded-md px-4 py-2 w-full h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             </div>
+            
             <div class="h-captcha" data-captcha="true"></div>
             <button type="submit" class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black font-medium px-6 py-2 rounded-md mt-4 dark:hover:bg-gray-300 hover:scale-110 transform transition-transform duration-300">SEND MESSAGE</button>
           </div>
