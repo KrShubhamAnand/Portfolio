@@ -25,6 +25,7 @@
 .menu.hidden {
   display: block;
 }
+
 :root {
   /* violet */
   --primary-color: 100,100,100;
