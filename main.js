@@ -21,11 +21,11 @@ document.querySelector("#app").innerHTML = `
 
       <a href="/"
         class="text-2xl  align-middle font-semibold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
-      <a href="#Section-project"
+      <a href="#Projects"
         class="text-2xl p-3 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Projects</a>
-      <a href="#skill"
+      <a href="#Skills"
         class="text-2xl p-3 align-middle font-semibold leading-6 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Skills</a>
-      <a href="#contact"
+      <a href="#Contact"
         class="text-2xl p-3 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Contact</a>
       
       </ul>
@@ -89,7 +89,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
 
-    <section id="Section-project" class="mt-20 mb-20 py-10"><!-- added  py-10 for having the having section look better-->
+    <section id="Projects" class="mt-20 mb-20 py-10"><!-- added  py-10 for having the having section look better-->
       <div id="projects">
         <h1 class="text-gray-950 dark:text-gray-100 text-5xl font-bold tracking-tight mb-10 ">Projects</h1><!-- commented text-center for having the text at left instead of center-->
         <div id="cards" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 sm:px-10 lg:px-20">
@@ -160,7 +160,7 @@ document.querySelector("#app").innerHTML = `
 
 
 
-    <div id="skill" class="mb-20 mt-20 py-10">
+    <div id="Skills" class="mb-20 mt-20 py-10">
     <h1 class="flex flex-col text-5xl font-bold tracking-tight text-gray-950 dark:text-gray-100 mb-8 ">Skill</h1><!-- commented text-center for having the text at left instead of center-->
     
     <div class="px-4 sm:px-10 lg:px-20">
@@ -203,7 +203,7 @@ document.querySelector("#app").innerHTML = `
         </div>
     </div>
 </div>
-<div id="contact" class="mt-20 mb-20 py-10 ">
+<div id="Contact" class="mt-20 mb-20 py-10 ">
   <h1 class="dark:text-gray-100 mb-16 text-5xl font-bold tracking-tight ">Contact</h1><!-- commented text-center for having the text at left instead of center-->
   <div id="block" class="flex justify-center items-center">
     <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-2xl lg:max-w-4xl">
@@ -223,7 +223,7 @@ document.querySelector("#app").innerHTML = `
             <div class="mt-4">
               <textarea id="message" name="message" placeholder="Your Message" class="border border-gray-300 rounded-md px-4 py-2 w-full h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             </div>
-            
+
             <div class="h-captcha" data-captcha="true"></div>
             <button type="submit" class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black font-medium px-6 py-2 rounded-md mt-4 dark:hover:bg-gray-300 hover:scale-110 transform transition-transform duration-300">SEND MESSAGE</button>
           </div>
