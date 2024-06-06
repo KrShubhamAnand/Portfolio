@@ -51,7 +51,7 @@ document.querySelector("#app").innerHTML = `
 
     </header>
 
-    <div id="hero" class="mt-20 mb-20">
+    <div id="hero" class="mt-20 mb-20 ">
       <div class=""><!-- commented text-center for having the text at left instead of center-->
         <h1 class="text-gray-950 dark:text-gray-100 text-5xl font-bold mb-2 tracking-tight">Shivaraj Kolekar</h1>
         <div id="typed-strings">
@@ -59,11 +59,11 @@ document.querySelector("#app").innerHTML = `
         </div>
         <span id="typed" class="dark:text-gray-400"></span>
         <div class="max-w-screen-md mt-2 "><!-- commented mx-auto for having the text at left instead of center-->
-          <p class="text-gray-800 dark:text-gray-200 text-3xl tracking-tight">I'm a passionate Web developer developing my version of the digital world with one step at a time. I'm currently pursuing an undergraduate course in engineering while developing websites and playing games in free time.</p>
+          <p class="text-gray-800 dark:text-gray-200 text-3xl tracking-tight">I'm a passionate web developer, creating my unique digital world step by step. I'm currently pursuing an undergraduate course in engineering while developing websites and playing games in free time.</p>
         </div>
       </div>
       <div class=""><!-- commented text-center for having the text at left instead of center-->
-        <p class="text-gray-600 dark:text-gray-400 text-2xl mt-4 tracking-tight">Connect with me here ⬇️</p>
+        <p class="text-gray-600 dark:text-gray-400 text-2xl mt-4 tracking-tight">Connect with me here! ⬇️</p>
         <div class="mt-8 flex flex-wrap gap-5  mb-16"><!-- commented justify-center for having the text at left instead of center-->
           <a href="https://github.com/Shivaraj-Kolekar" aria-label="GitHub" class="dark:fill-white fill-black transition-transform hover:scale-150">
             <svg width="30" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
 
-    <section id="Projects" class="mt-20 mb-20 py-10"><!-- added  py-10 for having the having section look better-->
+    <section id="Projects" class="mt-20 mb-20 pt-8"><!-- added  py-10 for having the having section look better-->
       <div id="projects">
         <h1 class="text-gray-950 dark:text-gray-100 text-5xl font-bold tracking-tight mb-10 ">Projects</h1><!-- commented text-center for having the text at left instead of center-->
         <div id="cards" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 sm:px-10 lg:px-20">
@@ -160,7 +160,7 @@ document.querySelector("#app").innerHTML = `
 
 
 
-    <div id="Skills" class="mb-20 mt-20 py-10">
+    <div id="Skills" class="mb-20  mt-20 pt-8">
     <h1 class="flex flex-col text-5xl font-bold tracking-tight text-gray-950 dark:text-gray-100 mb-8 ">Skill</h1><!-- commented text-center for having the text at left instead of center-->
     
     <div class="px-4 sm:px-10 lg:px-20">
@@ -203,7 +203,7 @@ document.querySelector("#app").innerHTML = `
         </div>
     </div>
 </div>
-<div id="Contact" class="mt-20 mb-20 py-10 ">
+<div id="Contact" class="mt-20 mb-20 pt-8 ">
   <h1 class="dark:text-gray-100 mb-16 text-5xl font-bold tracking-tight ">Contact</h1><!-- commented text-center for having the text at left instead of center-->
   <div id="block" class="flex justify-center items-center">
     <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-2xl lg:max-w-4xl">
@@ -228,7 +228,7 @@ document.querySelector("#app").innerHTML = `
             <button type="submit" class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black font-medium px-6 py-2 rounded-md mt-4 dark:hover:bg-gray-300 hover:scale-110 transform transition-transform duration-300">SEND MESSAGE</button>
           </div>
     </form>
-    <div class="md:w-1/2 bg-zinc-200 dark:bg-zinc-800 text-gray-900 dark:text-gray-100 p-8 rounded-lg">
+    <div class="md:w-1/2  bg-zinc-200 dark:bg-zinc-800 text-gray-900 dark:text-gray-100 p-8 rounded-lg">
       <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
       <p class="mb-6">Fill up the form and send me your message or contact through below details</p>
       <div class="flex items-center mb-4">
@@ -285,7 +285,12 @@ document.querySelector("#app").innerHTML = `
 </main>
 
 <div>
-<p class="dark:text-gray-100 font-semibold py-12 text-2xl flex justify-center tracking-tight">Portfolio Developed by Shivaraj</p>
+<p class="dark:text-gray-100 font-semibold p-6 text-2xl flex justify-center tracking-tight">Portfolio Developed by Shivaraj</p>
+<p class="dark:text-gray-100 font-semibold pb-20 text-2xl items-center flex justify-center tracking-tight"><a href="https://github.com/Shivaraj-Kolekar/portfolio.git" class="bg-gray-900  items-center hover:scale-110 transition-transform transform dark:bg-gray-100 text-white dark:text-black flex gap-2 p-3 rounded-md font-medium ml-5">Source Code
+                <svg class="fill-white dark:fill-black" width="22" height="22" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+              </a></p>
 </div>
 
 </div>
