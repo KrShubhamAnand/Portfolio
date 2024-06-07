@@ -23,7 +23,7 @@ document.querySelector("#app").innerHTML = `
 </button>
 
     </div>
-    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-14 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3  md:rounded-lg border-solid border-2 border-zinc-400 dark:border-zinc-600 bg-zinc-100 dark:bg-zinc-900  ">
+    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-36 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3 rounded-bl-md rounded-br-md md:rounded-lg border-solid border-2 border-zinc-400 dark:border-zinc-600 bg-zinc-100 dark:bg-zinc-900  ">
       <ul class="flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center md:bg-transparent px-6 rounded-full font-medium max-w-max ">
          <a href="/"
         class="text-2xl font-sans align-middle font-bold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
@@ -210,26 +210,31 @@ document.querySelector("#app").innerHTML = `
 <div id="Contact" class="mt-20 mb-20 pt-8 ">
   <h1 class="dark:text-gray-100 mb-16 text-5xl font-bold tracking-tight ">Contact</h1><!-- commented text-center for having the text at left instead of center-->
   <div id="block" class="flex justify-center items-center">
-    <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-2xl lg:max-w-4xl">
-      <input type="hidden" name="access_key" value="ad73a3b2-ca2f-45bc-918a-5c642ff8ebf7">
+         <!--<form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-2xl lg:max-w-4xl"> this form is commented for removing captcha and to improve/change reponsivenes if needed switch back to it or it classes-->
+    <form
+  action="https://formspree.io/f/mvoejjvq"
+  method="POST"
+>
+      <input type="hidden" name="access_key" value="ad73a3b2-ca2f-45bc-918a-5c642ff8ebf7" />
+      
       <div class="dark:bg-zinc-900 bg-zinc-100 border-zinc-300 dark:border-zinc-700 border-solid border-2 p-4 rounded-xl shadow-lg">
         <div class="flex flex-col md:flex-row">
           <div class="md:w-1/2 mb-8 md:mb-0 p-4">
             <h1 class="text-3xl dark:text-gray-100 font-bold mb-4">Contact Me</h1>
             <p class="dark:text-gray-100 mb-6">Any questions or discussions? Just write me a message!</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-4">
               <input type="text" autocomplete="given-name" placeholder="John" name="first-name" required class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <input type="text" placeholder="Doe" name="last-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <input type="text" autocomplete="given-name" placeholder="Doe" name="last-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-            <div class="mt-4">
+            <div class="form-group mt-4">
               <input type="email" autocomplete="given-email" name="email" required placeholder="lucas@mail.com" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-            <div class="mt-4">
+            <div class="form-group mt-4">
               <textarea id="message" name="message" placeholder="Your Message" class="border border-gray-300 rounded-md px-4 py-2 w-full h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             </div>
-
-            <div class="h-captcha" data-captcha="true"></div>
-            <button type="submit" class="bg-gray-900 dark:bg-gray-100 text-white dark:text-black font-medium px-6 py-2 rounded-md mt-4 dark:hover:bg-gray-300 hover:scale-110 transform transition-transform duration-300">SEND MESSAGE</button>
+             
+            <!-- <div class="h-captcha" data-captcha="true"></div>-->
+            <button type="submit" class="form-submit bg-gray-900 dark:bg-gray-100 text-white dark:text-black font-medium px-6 py-2 rounded-md mt-4 dark:hover:bg-gray-300 hover:scale-110 transform transition-transform duration-300">SEND MESSAGE</button>
           </div>
     </form>
     <div class="md:w-1/2  bg-zinc-200 dark:bg-zinc-800 text-gray-900 dark:text-gray-100 p-8 rounded-lg">
