@@ -11,45 +11,46 @@ document.querySelector("#app").innerHTML = `
 
   <main>
     <header>
-    <nav class="text-white flex justify-between items-center py-6  ">
-    <div>
-    <h1 class="text-2xl  align-middle font-semibold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200"></h1>
-    </div>
-    <div class=" duration-500 md:static md:min-h-fit absolute  min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-      <ul
-      class='flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center hover:scale-105 bg-zinc-200 dark:bg-zinc-900 px-6  rounded-full font-medium max-w-max btn btn-gradient-border btn-glow'>
+  <nav class="text-white flex justify-between items-center py-6">
+    <div class='flex gap-6'>
+      <button data-text="Awesome" class="button1 dark:block hidden">
+  <span class="actual-text">&nbsp;Shivaraj&nbsp;</span>
+  <span class="hover-text1" aria-hidden="true">&nbsp;Shivaraj&nbsp;</span>
+</button>
+<button data-text="Awesome" class="button2 dark:hidden block">
+  <span class="actual-text">&nbsp;Shivaraj&nbsp;</span>
+  <span class="hover-text2" aria-hidden="true">&nbsp;Shivaraj&nbsp;</span>
+</button>
 
-      <a href="/"
-        class="text-2xl  align-middle font-semibold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
+    </div>
+    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-14 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3  md:rounded-lg  bg-zinc-200 dark:bg-zinc-900  ">
+      <ul class="flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center md:bg-transparent px-6 rounded-full font-medium max-w-max ">
+        <a href="/"
+        class="text-2xl  align-middle font-semibold leading-6  p-2 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer hover:scale-110 transition-transform transform text-gray-800 dark:text-gray-200">Home</a>
       <a href="#Projects"
-        class="text-2xl p-3 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Projects</a>
+        class="text-2xl p-2 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Projects</a>
       <a href="#Skills"
-        class="text-2xl p-3 align-middle font-semibold leading-6 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Skills</a>
+        class="text-2xl p-2 align-middle font-semibold leading-6 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Skills</a>
       <a href="#Contact"
-        class="text-2xl p-3 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Contact</a>
-      
+        class="text-2xl p-2 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Contact</a>
+
       </ul>
     </div>
-    <div class='flex items-center gap-6'>
-      <button id="theme-toggle" type="button"
-        class="text-gray-500 h-fit w-fit my-0 dark:text-gray-400 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600 dark:bg-zinc-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-        <svg id="theme-toggle-dark-icon" class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
+    <div class="flex items-center gap-6">
+      <button id="theme-toggle" type="button" class="h-fit w-fit my-0 dark:text-gray-400 text-gray-500 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600 dark:bg-zinc-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg>
-        <svg id="theme-toggle-light-icon" class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-            fill-rule="evenodd" clip-rule="evenodd"></path>
+        <svg id="theme-toggle-light-icon" class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
         </svg>
       </button>
-      <ion-icon id="toggle-menu-button" onclick="onToggleMenu(event)" name="menu" class='text-3xl cursor-pointer md:hidden'></ion-icon>
+      <ion-icon id="toggle-menu-button" name="menu" class="w-7 h-7 dark:bg-zinc-800 p-2.5 rounded-lg cursor-pointer md:hidden text-gray-500 dark:text-gray-400 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600  "></ion-icon>
     </div>
-      
   </nav>
+</header>
 
-    </header>
+    
 
     <div id="hero" class="mt-20 mb-20 ">
       <div class=""><!-- commented text-center for having the text at left instead of center-->
@@ -197,6 +198,7 @@ document.querySelector("#app").innerHTML = `
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=figma" alt="Figma">
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=blender" alt="Blender">
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                    <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=postman" alt="Postman">
                 </div>
             </div>
 
@@ -343,13 +345,13 @@ var typed = new Typed('#typed', {
  backSpeed:40,
   typeSpeed: 60
 });
-const toggleMenuButton = document.getElementById('toggle-menu-button');
-toggleMenuButton.addEventListener('click', function(e) {
-  onToggleMenu(e);
-});
 
-const navlinks = document.querySelector(".nav-links");
-function onToggleMenu(e) {
-  const navlinks = document.querySelector(".nav-links");
-  navlinks.classList.toggle("hidden");
-}
+
+document.getElementById('toggle-menu-button').addEventListener('click', function() {
+  var menu = document.getElementById('menu');
+  if (menu.style.top === '0px') {
+    menu.style.top = '-100%';
+  } else {
+    menu.style.top = '0px';
+  }
+});

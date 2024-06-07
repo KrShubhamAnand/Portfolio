@@ -4,8 +4,8 @@
 
 @keyframes appear {
   from{
-    opacity: 0;
-    scale: 0.7;
+    opacity: 0.5;
+    scale: 0.5;
     
   }
   to{
@@ -18,13 +18,13 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.menu {
-  display: none;
-}
 
-.menu.hidden {
-  display: block;
-}
+  @media (max-width: 768px) {
+    #menu {
+      top: 0;
+    }
+  }
+
 
 :root {
   /* violet */
@@ -139,4 +139,120 @@
 .typed-cursor {
   font-size: 30px;;
   color: gray;
+}
+
+/* === removing default button style ===*/
+.button1 {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button1 {
+  --border-right: 4px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #fff;
+  --fs-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text1 {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button1:hover .hover-text1 {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.button1 {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* === removing default button style ===*/
+.button2 {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* button styling */
+.button2 {
+  --border-right: 4px;
+  --text-stroke-color: rgba(0, 0, 0, 0.6);
+  --animation-color: #000000;
+  --fs-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text2 {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button2:hover .hover-text2 {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.button2 {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
