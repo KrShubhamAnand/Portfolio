@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+
+
+
+
 @keyframes appear {
   from{
     opacity: 0.5;

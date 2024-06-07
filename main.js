@@ -25,14 +25,15 @@ document.querySelector("#app").innerHTML = `
     </div>
     <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-14 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3  md:rounded-lg  bg-zinc-200 dark:bg-zinc-900  ">
       <ul class="flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center md:bg-transparent px-6 rounded-full font-medium max-w-max ">
-        <a href="/"
-        class="text-2xl  align-middle font-semibold leading-6  p-2 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer hover:scale-110 transition-transform transform text-gray-800 dark:text-gray-200">Home</a>
+         <a href="/"
+        class="text-2xl font-sans align-middle font-bold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
       <a href="#Projects"
-        class="text-2xl p-2 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Projects</a>
+        class="text-2xl  font-sans p-3 align-middle font-bold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Projects</a>
       <a href="#Skills"
-        class="text-2xl p-2 align-middle font-semibold leading-6 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Skills</a>
+        class="text-2xl p-3 font-sans align-middle font-bold leading-6 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Skills</a>
       <a href="#Contact"
-        class="text-2xl p-2 align-middle font-semibold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 hover:scale-110 transition-transform transform dark:text-gray-200">Contact</a>
+        class="text-2xl p-3 font-sans align-middle font-bold leading-6  hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Contact</a>
+      
 
       </ul>
     </div>
@@ -199,6 +200,7 @@ document.querySelector("#app").innerHTML = `
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=blender" alt="Blender">
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=github" alt="GitHub">
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=postman" alt="Postman">
+
                 </div>
             </div>
 
