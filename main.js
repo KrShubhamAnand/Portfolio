@@ -23,7 +23,7 @@ document.querySelector("#app").innerHTML = `
 </button>
 
     </div>
-    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-14 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3  md:rounded-lg  bg-zinc-200 dark:bg-zinc-900  ">
+    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-14 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3  md:rounded-lg border-solid border-2 border-zinc-400 dark:border-zinc-600 bg-zinc-100 dark:bg-zinc-900  ">
       <ul class="flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center md:bg-transparent px-6 rounded-full font-medium max-w-max ">
          <a href="/"
         class="text-2xl font-sans align-middle font-bold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
@@ -38,7 +38,7 @@ document.querySelector("#app").innerHTML = `
       </ul>
     </div>
     <div class="flex items-center gap-6">
-      <button id="theme-toggle" type="button" class="h-fit w-fit my-0 dark:text-gray-400 text-gray-500 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600 dark:bg-zinc-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+      <button id="theme-toggle" type="button" class="h-fit w-fit my-0 dark:text-white text-gray-500 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-100 dark:hover:bg-zinc-600 dark:bg-zinc-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
         <svg id="theme-toggle-dark-icon" class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg>
@@ -46,7 +46,7 @@ document.querySelector("#app").innerHTML = `
           <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
         </svg>
       </button>
-      <ion-icon id="toggle-menu-button" name="menu" class="w-7 h-7 dark:bg-zinc-800 p-2.5 rounded-lg cursor-pointer md:hidden text-gray-500 dark:text-gray-400 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600  "></ion-icon>
+      <ion-icon id="toggle-menu-button" name="menu" class="w-7 h-7 dark:bg-zinc-800  p-2.5 rounded-lg cursor-pointer md:hidden text-gray-500 dark:text-gray-400 hover:scale-110 transition-transform transform hover:bg-zinc-200 bg-zinc-300 dark:hover:bg-zinc-600  "></ion-icon>
     </div>
   </nav>
 </header>
@@ -95,7 +95,7 @@ document.querySelector("#app").innerHTML = `
       <div id="projects">
         <h1 class="text-gray-950 dark:text-gray-100 text-5xl font-bold tracking-tight mb-10 ">Projects</h1><!-- commented text-center for having the text at left instead of center-->
         <div id="cards" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 sm:px-10 lg:px-20">
-          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-white  transform hover:scale-103 transition-transform">
+          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 bg-zinc-100 rounded-xl border-2 border-solid border-zinc-400 dark:border-zinc-700 hover:border-zinc-600 dark:hover:border-white  transform hover:scale-103 transition-transform">
             <img class="p-4 rounded-3xl" src="/recipe.png" alt="Recipe Finder">
             <h1 class="dark:text-gray-100 text-4xl font-bold tracking-tight mx-5">Recipe Finder</h1>
             <p class="dark:text-gray-100 font-semibold text-md tracking-tight p-2 mx-5">Quickly generate tasty recipes based on available ingredients.</p>
@@ -113,7 +113,7 @@ document.querySelector("#app").innerHTML = `
             </div>
           </div>
 
-          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-white transform hover:scale-103 transition-transform">
+          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 bg-zinc-100 rounded-xl border-2 border-solid border-zinc-400 dark:border-zinc-700 hover:border-zinc-600 dark:hover:border-white transform hover:scale-103 transition-transform">
             <img class="p-4 rounded-3xl" src="/encrypt.png" alt="File Encryption Tool">
             <h1 class="dark:text-gray-100 text-4xl font-bold tracking-tight mx-5">File Encryption Tool</h1>
             <p class="dark:text-gray-100 font-semibold text-md tracking-tight p-2 mx-5">Allows Encryption/Decryption of multiple file formats.</p>
@@ -126,7 +126,7 @@ document.querySelector("#app").innerHTML = `
             </div>
           </div>
 
-          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-white transform hover:scale-103 transition-transform">
+          <div id="block" class="mt-8 shadow-md dark:bg-zinc-900 bg-zinc-100 rounded-xl border-2 border-solid border-zinc-400 dark:border-zinc-700 hover:border-zinc-600 dark:hover:border-white transform hover:scale-103 transition-transform">
             <img class="p-4 rounded-3xl" src="/npm.png" alt="NPM Package">
             <h1 class="dark:text-gray-100 text-4xl font-bold tracking-tight mx-5">NPM Package</h1>
             <p class="dark:text-gray-100 font-semibold text-md tracking-tight p-2 mx-5">The currency converter package supports 32 currencies with real-time exchange rates.</p>
@@ -168,7 +168,7 @@ document.querySelector("#app").innerHTML = `
     <div class="px-4 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
 
-            <div id="block" class="mt-8 p-4 grid col-span-1 shadow-md w-full dark:bg-zinc-900 rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-white transform hover:scale-105 transition-transform">
+            <div id="block" class="mt-8 p-4 grid col-span-1 shadow-md w-full dark:bg-zinc-900 bg-zinc-100 rounded-xl border-2 border-solid border-zinc-400 dark:border-zinc-700 hover:border-zinc-600 dark:hover:border-white transform hover:scale-105 transition-transform">
                 <h1 class="dark:text-gray-100 m-3 text-2xl sm:text-4xl font-bold tracking-tight mb-4">Languages and Frameworks</h1>
                 <div class="flex flex-wrap gap-3 px-2 sm:px-5 pt-3 sm:pt-6">
                     <img class="w-8 h-8 sm:w-16 sm:h-16 mb-5" src="https://skillicons.dev/icons?i=html" alt="HTML">
@@ -184,7 +184,7 @@ document.querySelector("#app").innerHTML = `
                 </div>
             </div>
 
-            <div id="block" class="mt-8 p-4 grid col-span-1 shadow-md w-full dark:bg-zinc-900 rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-white transform hover:scale-105 transition-transform">
+            <div id="block" class="mt-8 p-4 grid col-span-1 shadow-md w-full dark:bg-zinc-900 bg-zinc-100 rounded-xl border-2 border-solid border-zinc-400 dark:border-zinc-700 hover:border-zinc-600 dark:hover:border-white transform hover:scale-105 transition-transform">
                 
             <h1 class=" dark:text-gray-100 text-2xl m-3 sm:text-4xl font-bold tracking-tight mb-4">Database and Tools</h1>
                 
@@ -212,7 +212,7 @@ document.querySelector("#app").innerHTML = `
   <div id="block" class="flex justify-center items-center">
     <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-2xl lg:max-w-4xl">
       <input type="hidden" name="access_key" value="ad73a3b2-ca2f-45bc-918a-5c642ff8ebf7">
-      <div class="dark:bg-zinc-900 border-zinc-300 dark:border-zinc-700 border-solid border-2 p-4 rounded-xl shadow-lg">
+      <div class="dark:bg-zinc-900 bg-zinc-100 border-zinc-300 dark:border-zinc-700 border-solid border-2 p-4 rounded-xl shadow-lg">
         <div class="flex flex-col md:flex-row">
           <div class="md:w-1/2 mb-8 md:mb-0 p-4">
             <h1 class="text-3xl dark:text-gray-100 font-bold mb-4">Contact Me</h1>
@@ -298,6 +298,7 @@ document.querySelector("#app").innerHTML = `
 </div>
 
 </div>
+
 
 
 `;
