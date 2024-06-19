@@ -1,57 +1,50 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-
-
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @keyframes appear {
-  from{
+  from {
     opacity: 0.5;
     scale: 0.5;
-    
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
 }
-#block{
-  animation : appear linear ;
+#block {
+  animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-  @media (max-width: 768px) {
-    #menu {
-      top: 0;
-    }
-    body{
-      padding:6px;;
-    }
+@media (max-width: 768px) {
+  #menu {
+    top: 0;
   }
-
+  body {
+    padding: 6px;
+  }
+}
 
 :root {
   /* violet */
-  --primary-color: 100,100,100;
-  
+  --primary-color: 100, 100, 100;
+
   /* white */
-  --text-color: 100,100,100;
+  --text-color: 100, 100, 100;
 }
 
-
-
 .btn {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 18px;
   padding: 12px 32px;
-  ;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease;
-  border-radius: 10px;;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -60,7 +53,7 @@
 .btn-gradient-border {
   color: rgba(var(--text-color));
   border: 2px double transparent;
-      
+
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -93,7 +86,7 @@
 .pyramid-loader .wrapper .side {
   width: 200px;
   height: 200px;
-/* you can choose any gradient or color you want */
+  /* you can choose any gradient or color you want */
   /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
   position: absolute;
   top: 0;
@@ -107,17 +100,17 @@
 
 .pyramid-loader .wrapper .side1 {
   transform: rotateZ(-30deg) rotateY(90deg);
-  background: white
+  background: white;
 }
 
 .pyramid-loader .wrapper .side2 {
   transform: rotateZ(30deg) rotateY(90deg);
-  background: white
+  background: white;
 }
 
 .pyramid-loader .wrapper .side3 {
   transform: rotateX(30deg);
-  background: white
+  background: white;
 }
 
 .pyramid-loader .wrapper .side4 {
@@ -139,12 +132,12 @@
   filter: blur(12px);
 }
 
-#typed{
-  font-size: 25px;;
+#typed {
+  font-size: 25px;
 }
 /* Cursor */
 .typed-cursor {
-  font-size: 30px;;
+  font-size: 30px;
   color: gray;
 }
 
@@ -202,13 +195,6 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
 /* === removing default button style ===*/
 .button2 {
   margin: 0;
@@ -217,7 +203,6 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  
 }
 
 /* button styling */

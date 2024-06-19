@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
 
   <main>
     <header>
-  <nav class="text-white flex justify-between items-center py-6">
+  <nav class="text-white flex justify-between items-center py-6 px-0 ">
     <div class='flex gap-6'>
       <button data-text="Awesome" class="button1 dark:block hidden">
   <span class="actual-text">&nbsp;Shivaraj&nbsp;</span>
@@ -20,7 +20,7 @@ document.querySelector('#app').innerHTML = `
 </button>
 
     </div>
-    <div id="menu" class="duration-500 md:static md:min-h-fit lg:-ml-36 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3 rounded-bl-md rounded-br-md md:rounded-lg border-solid border-2 border-zinc-400 dark:border-zinc-600 bg-zinc-100 dark:bg-zinc-900  ">
+    <div id="menu"  class="hidden  md:flex duration-300 md:static md:min-h-fit lg:-ml-36 absolute min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex-col md:flex-row md:items-center py-6 md:px-4 md:py-3 rounded-bl-md rounded-br-md md:rounded-lg border-solid border-2 border-zinc-400 dark:border-zinc-600 bg-zinc-100 dark:bg-zinc-900  ">
       <ul class="flex flex-col md:flex-row gap-6 font-mono md:items-center text-3xl align-middle justify-center md:bg-transparent px-6 rounded-full font-medium max-w-max ">
          <a href="/"
         class="text-2xl font-sans align-middle font-bold leading-6  p-3 hover:white hover:bg-zinc-300  dark:hover:bg-zinc-800 rounded-md cursor-pointer text-gray-800 dark:text-gray-200">Home</a>
@@ -52,17 +52,17 @@ document.querySelector('#app').innerHTML = `
 
     <div id="hero" class="mt-20 mb-20 ">
       <div class=""><!-- commented text-center for having the text at left instead of center-->
-        <h1 class="text-gray-950 dark:text-gray-100 text-5xl font-bold mb-2 tracking-tight">Shivaraj Kolekar</h1>
+        <h1 class="text-gray-950 dark:text-gray-100 text-3xl md:text-5xl font-bold mb-2 tracking-tight">Shivaraj Kolekar</h1>
         <div id="typed-strings">
-          <p class="text-gray-600 dark:text-gray-400 text-2xl max-w-screen-md mx-auto font-normal tracking-tight mb-4">Student • Web Developer • AI Enthusiast • Tech Enthusiast • Engineer</p>
+          <p class="text-gray-600 dark:text-gray-400 text-1xl md:text-2xl max-w-screen-md mx-auto font-normal tracking-tight mb-4">Student • Web Developer • AI Enthusiast • Tech Enthusiast • Engineer</p>
         </div>
         <span id="typed" class="dark:text-gray-400"></span>
         <div class="max-w-screen-md mt-2 "><!-- commented mx-auto for having the text at left instead of center-->
-          <p class="text-gray-800 dark:text-gray-200 text-3xl tracking-tight">I'm a passionate web developer, creating my unique digital world step by step. I'm currently pursuing an undergraduate course in engineering while developing websites and playing games in free time.</p>
+          <p class="text-gray-800 dark:text-gray-200 text-xl md:text-3xl tracking-tight">I'm a passionate web developer, creating my unique digital world step by step. I'm currently pursuing an undergraduate course in engineering while developing websites and playing games in free time.</p>
         </div>
       </div>
       <div class=""><!-- commented text-center for having the text at left instead of center-->
-        <p class="text-gray-600 dark:text-gray-400 text-2xl mt-4 tracking-tight">Connect with me here! ⬇️</p>
+        <p class="text-gray-600 dark:text-gray-400 text-xl md:text-2xl mt-4 tracking-tight">Connect with me here! ⬇️</p>
         <div class="mt-8 flex flex-wrap gap-5  mb-16"><!-- commented justify-center for having the text at left instead of center-->
           <a href="https://github.com/Shivaraj-Kolekar" aria-label="GitHub" class="dark:fill-white fill-black transition-transform hover:scale-150">
             <svg width="30" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
@@ -351,7 +351,7 @@ var typed = new Typed('#typed', {
   backSpeed: 40,
   typeSpeed: 60
 })
-
+/*
 document
   .getElementById('toggle-menu-button')
   .addEventListener('click', function () {
@@ -361,4 +361,10 @@ document
     } else {
       menu.style.top = '0px'
     }
-  })
+  })*/
+const toggleMenuButton = document.getElementById('toggle-menu-button')
+const menu = document.getElementById('menu')
+
+toggleMenuButton.addEventListener('click', () => {
+  menu.classList.toggle('hidden')
+})
