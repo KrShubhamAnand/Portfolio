@@ -3,8 +3,8 @@ import './style.css'
 import Typed from 'typed.js'
 
 document.querySelector('#app').innerHTML = `
-
-<div id="body" class="px-4 sm:px-10 lg:px-20 bg-scroll">
+ 
+<div id="body" class="font-container px-4 sm:px-10 lg:px-20 bg-scroll">
 
   <main>
     <header>
